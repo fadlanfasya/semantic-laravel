@@ -72,14 +72,14 @@ class Sparql extends Model
                      ad:city ?city;
                      ad:country ?country;
                      ad:image ?image.
-                    FILTER regex (?actorid, \"{$id}\", \"i\");
-                    FILTER regex (?name, \"{$name}\", \"i\");
-                    FILTER regex (?born, \"{$born}\", \"i\");
-                    FILTER regex (?city, \"{$city}\", \"i\");
-                    FILTER regex (?country, \"{$country}\", \"i\");
-                    FILTER regex (?charactername, \"{$hasrole}\", \"i\");
-                    FILTER regex (?movie, \"{$moviename}\", \"i\");
-                    FILTER regex (?movie, \"{$image}\", \"i\").
+                    FILTER regex (?actorid, \"{$id}\", \"i\")
+                    FILTER regex (?name, \"{$name}\", \"i\")
+                    FILTER regex (?born, \"{$born}\", \"i\")
+                    FILTER regex (?city, \"{$city}\", \"i\")
+                    FILTER regex (?country, \"{$country}\", \"i\")
+                    FILTER regex (?charactername, \"{$hasrole}\", \"i\")
+                    FILTER regex (?movie, \"{$moviename}\", \"i\")
+                    FILTER regex (?movie, \"{$image}\", \"i\")
                 }"
         );
 
