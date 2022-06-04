@@ -1,0 +1,49 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix d: <http://examplesparql.com/n/data#>.
+
+
+d:1 rdf:Type d:Actor;
+       d:actorid "A001";
+       d:name "Robert De Niro";
+       d:birthdate "17 August";
+       d:birthyear "1943";
+       d:birthplace "USA";
+       d:city "New York";
+       d:image "https://m.media-amazon.com/images/M/MV5BMjAwNDU3MzcyOV5BMl5BanBnXkFtZTcwMjc0MTIxMw@@._V1_UY317_CR13,0,214,317_AL_.jpg";
+       d:hasmovie "M001".
+
+d:2 rdf:Type d:Actor;
+       d:actorid "A002";
+       d:name "Joaquin Phoenix";
+       d:birthdate "28 October";
+       d:birthyear "1974";
+       d:birthplace "Puerto Rico";
+       d:image "https://m.media-amazon.com/images/M/MV5BZGMyY2Q4NTEtMWVkZS00NzcwLTkzNmQtYzBlMWZhZGNhMDhkXkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       d:hasmovie "M001","M002".
+
+d:3 rdf:Type d:Actor;
+       d:actorid "A003";
+       d:name "Zazie Beetz";
+       d:birthdate "1 June";
+       d:birthyear "1991";
+       d:birthplace "Germany";
+       d:image "https://m.media-amazon.com/images/M/MV5BNGQwOTQzYjQtZjlmYi00MWYwLTg0YzEtOTlhYmYzNDcyMDM4XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY317_CR36,0,214,317_AL_.jpg";
+       d:hasmovie "M001".
+
+d:4 rdf:Type d:Actor;
+       d:actorid "A004";
+       d:name "Amy Adams";
+       d:birthdate "20 August";
+       d:birthyear "1974";
+       d:birthplace "Italy";
+       d:image "https://m.media-amazon.com/images/M/MV5BMTg2NTk2MTgxMV5BMl5BanBnXkFtZTgwNjcxMjAzMTI@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       d:hasmovie "M002", "M003".
+
+d:5 rdf:Type d:Actor;
+       d:actorid "A005";
+       d:name "Scarlett Johansson";
+       d:birthdate "22 November";
+       d:birthyear "1984";
+       d:birthplace "USA";
+       d:image "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY317_CR23,0,214,317_AL_.jpg";
+       d:hasmovie "M002","M004".

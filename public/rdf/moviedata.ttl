@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix d: <http://examplesparql.com/n/data#>.
+
+#Movie
+
+d:1 rdf:Type d:Movie;
+    d:movieid "M001";
+    d:moviename "Joker";
+    d:year      "2019";
+    d:description "A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain.";
+    d:hasgenre "G001","G002","G003";
+    d:poster "https://www.imdb.com/title/tt7286456/mediaviewer/rm3353122305/?ref_=tt_ov_i".
+
+d:2 rdf:Type d:Movie;
+    d:movieid "M002";
+    d:moviename "Her";
+    d:year      "2013";
+    d:description "In a near future, a lonely writer develops an unlikely relationship with an operating system designed to meet his every need.";
+    d:hasgenre "G002","G004","G005";
+    d:poster "https://www.imdb.com/title/tt1798709/mediaviewer/rm1539299328/?ref_=tt_ov_i".
+
+d:3 rdf:Type d:Movie;
+    d:movieid "M003";
+    d:moviename "Justice League";
+    d:year      "2017";
+    d:description "Fueled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne enlists the help of his new-found ally, Diana Prince, to face an even greater enemy.";
+    d:hasgenre "G006","G007","G008";
+    d:poster "https://www.imdb.com/title/tt0974015/mediaviewer/rm1061640448/?ref_=tt_ov_i".
+
+d:4 rdf:Type d:Movie;
+    d:movieid "M004";
+    d:moviename "Avengers: Endgame";
+    d:year      "2019";
+    d:description "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.";
+    d:hasgenre "G006","G007","G002";
+    d:poster "https://www.imdb.com/title/tt4154796/mediaviewer/rm2775147008/?ref_=tt_ov_i".

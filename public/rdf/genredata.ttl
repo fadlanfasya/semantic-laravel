@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix d: <http://examplesparql.com/n/data#>.
+
+#Genre
+
+d:1 rdf:Type d:Genre;
+    d:genreid "G001";
+    d:genrename "Crime".
+
+d:2 rdf:Type d:Genre;
+    d:genreid "G002";
+    d:genrename "Drama".
+
+d:3 rdf:Type d:Genre;
+    d:genreid "G003";
+    d:genrename "Thriller".
+
+d:4 rdf:Type d:Genre;
+    d:genreid "G004";
+    d:genrename "Romance".
+
+d:5 rdf:Type d:Genre;
+    d:genreid "G005";
+    d:genrename "Sci-Fi".
+
+d:6 rdf:Type d:Genre;
+    d:genreid "G006";
+    d:genrename "Action".
+
+d:7 rdf:Type d:Genre;
+    d:genreid "G007";
+    d:genrename "Adventure".
+
+d:8 rdf:Type d:Genre;
+    d:genreid "G008";
+    d:genrename "Fantasy".

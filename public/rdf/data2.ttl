@@ -1,0 +1,292 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix ad: <http://examplesparql.com/n/actordata#>.
+@prefix md: <http://examplesparql.com/n/moviedata#>.
+@prefix d: <http://examplesparql.com/n/data#>.
+
+#Actor
+
+d:a001 rdf:Type d:Actor;
+       ad:actorid "A001";
+       ad:name "Robert De Niro";
+       ad:born "17 Agustus 1943";
+       ad:city "New York";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMjAwNDU3MzcyOV5BMl5BanBnXkFtZTcwMjc0MTIxMw@@._V1_UY317_CR13,0,214,317_AL_.jpg";
+       ad:hasrole d:role1.
+
+d:a002 rdf:Type d:Actor;
+       ad:actorid "A002";
+       ad:name "Joaquin Phoenix";
+       ad:born "28 October 1974";
+       ad:city "Puerto Rico";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BZGMyY2Q4NTEtMWVkZS00NzcwLTkzNmQtYzBlMWZhZGNhMDhkXkEyXkFqcGdeQXVyNjk1MjYyNTA@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       ad:hasrole d:role2, d:role3.
+
+d:a003 rdf:Type d:Actress;
+       ad:actorid "A003";
+       ad:name "Amy Adams";
+       ad:born "20 Agustus 1974";
+       ad:city "Vincenza";
+       ad:country "Italy";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMTg2NTk2MTgxMV5BMl5BanBnXkFtZTgwNjcxMjAzMTI@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       ad:hasrole d:role4, d:role5.
+
+d:a004 rdf:Type d:Actor;
+       ad:actorid "A004";
+       ad:name "Ben Affleck";
+       ad:born "15 Agustus 1972";
+       ad:city "California";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMzczNzNiMDAtMmUzZS00MTkwLWIwOTYtNmYyNjg3MTVkNThhXkEyXkFqcGdeQXVyMjA4MjI5MTA@._V1_UY317_CR12,0,214,317_AL_.jpg";
+       ad:hasrole d:role6, d:role7.
+
+d:a005 rdf:Type d:Actress;
+       ad:actorid "A005";
+       ad:name "Ana de Armas";
+       ad:born "30 April 1988";
+       ad:city "Havana";
+       ad:country "Cuba";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMWM3MDMzNjMtODM5Ny00YmY0LWJhNzQtNTE1ZDNlNjllNDQ0XkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_UY317_CR130,0,214,317_AL_.jpg";
+       ad:hasrole d:role8, d:role9, d:role10.
+
+d:a006 rdf:Type d:Actor;
+       ad:actorid "A006";
+       ad:name "Daniel Craig";
+       ad:born "2 Maret 1968";
+       ad:city "Cheshire";
+       ad:country "UK";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMjEzMjk4NDU4MF5BMl5BanBnXkFtZTcwMDMyNjQzMg@@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       ad:hasrole d:role11, d:role12;
+       ad:marriedto d:a007.
+
+d:a007 rdf:Type d:Actress;
+       ad:actorid "A007";
+       ad:name "Rachel Weisz";
+       ad:born "7 Maret 1970";
+       ad:city "London";
+       ad:country "UK";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMTQ4MzM1MDAwMV5BMl5BanBnXkFtZTcwNTU4NzQwMw@@._V1_UY317_CR4,0,214,317_AL_.jpg";
+       ad:hasrole d:role13;
+       ad:marriedto d:a006.
+
+d:a008 rdf:Type d:Actress;
+       ad:actorid "A008";
+       ad:name "Scarlett Johansson";
+       ad:born "22 November 1984";
+       ad:city "New York";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMTM3OTUwMDYwNl5BMl5BanBnXkFtZTcwNTUyNzc3Nw@@._V1_UY317_CR23,0,214,317_AL_.jpg";
+       ad:hasrole d:role14, d:role15, d:role16.
+
+d:a009 rdf:Type d:Actor;
+       ad:actorid "A009";
+       ad:name "Chris Evans";
+       ad:born "13 Juni 1981";
+       ad:city "Massachusetts";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMTU2NTg1OTQzMF5BMl5BanBnXkFtZTcwNjIyMjkyMg@@._V1_UY317_CR6,0,214,317_AL_.jpg";
+       ad:hasrole d:role17, d:role18.
+
+d:a010 rdf:Type d:Actor;
+       ad:actorid "A010";
+       ad:name "Robert Downey Jr.";
+       ad:born "4 April 1965";
+       ad:city "New York";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BNzg1MTUyNDYxOF5BMl5BanBnXkFtZTgwNTQ4MTE2MjE@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       ad:hasrole d:role19, d:role20.
+
+d:a011 rdf:Type d:Actor;
+       ad:actorid "A011";
+       ad:name "Jake Gyllenhaal";
+       ad:born "19 Desember 1980";
+       ad:city "California";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BNjA0MTU2NDY3MF5BMl5BanBnXkFtZTgwNDU4ODkzMzE@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       ad:hasrole d:role21, d:role22.
+
+d:a012 rdf:Type d:Actor;
+       ad:actorid "A012";
+       ad:name "Mark Ruffalo";
+       ad:born "22 November 1967";
+       ad:city "Winconsin";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BNWIzZTI1ODUtZTUzMC00NTdiLWFlOTYtZTg4MGZkYmU4YzNlXkEyXkFqcGdeQXVyNTExOTk5Nzg@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       ad:hasrole d:role23, d:role24, d:role25.
+
+d:a013 rdf:Type d:Actor;
+       ad:actorid "A013";
+       ad:name "Hugh Jackman";
+       ad:born "12 Oktober 1968";
+       ad:city "Sydney";
+       ad:country "Australia";
+       ad:image "https://m.media-amazon.com/images/M/MV5BNDExMzIzNjk3Nl5BMl5BanBnXkFtZTcwOTE4NDU5OA@@._V1_UX214_CR0,0,214,317_AL_.jpg";
+       ad:hasrole d:role26, d:role28.
+
+d:a014 rdf:Type d:Actor;
+       ad:actorid "A014";
+       ad:name "Ryan Reynolds";
+       ad:born "23 Oktober 1976";
+       ad:city "Vancouver";
+       ad:country "Canada";
+       ad:image "https://m.media-amazon.com/images/M/MV5BOTI3ODk1MTMyNV5BMl5BanBnXkFtZTcwNDEyNTE2Mg@@._V1_UY317_CR6,0,214,317_AL_.jpg";
+       ad:hasrole d:role27, d:role29, d:role34;
+       ad:marriedto d:a015.
+
+d:a015 rdf:Type d:Actress;
+       ad:actorid "A015";
+       ad:name "Blake Lively";
+       ad:born "25 Agustus 1987";
+       ad:city "California";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMTU2Njk0NTUyNl5BMl5BanBnXkFtZTcwODE0OTgyNw@@._V1_UY317_CR13,0,214,317_AL_.jpg";
+       ad:hasrole d:role30;
+       ad:marriedto d:a014.
+
+d:a016 rdf:Type d:Actress;
+       ad:actorid "A016";
+       ad:name "Anna Kendrick";
+       ad:born "9 Agustus 1985";
+       ad:city "Portland";
+       ad:country "USA";
+       ad:image "https://m.media-amazon.com/images/M/MV5BMjIzOTA0OTQyN15BMl5BanBnXkFtZTcwMjE1OTIwMw@@._V1_UY317_CR5,0,214,317_AL_.jpg";
+       ad:hasrole d:role31.
+
+d:a017 rdf:Type d:Actress;
+       ad:actorid "A017";
+       ad:name "Gal Gadot";
+       ad:born "30 April 1985";
+       ad:city "Rosh Ha'ayin";
+       ad:country "Israel";
+       ad:image "https://m.media-amazon.com/images/M/MV5BYThjM2NlOTItYTUzMC00ODE3LTk1MTItM2I3MDViY2U3MThlXkEyXkFqcGdeQXVyMTg4NDI0NDM@._V1_UY317_CR20,0,214,317_AL_.jpg";
+       ad:hasrole d:role32, d:role33.
+
+#Movie
+
+d:m001 rdf:Type d:Movie;
+       md:moviename "Joker";
+       md:year      "2019".
+
+d:m002 rdf:Type d:Movie;
+       md:moviename "Her";
+       md:year      "2013".
+
+d:m003 rdf:Type d:Movie;
+       md:moviename "Justice League";
+       md:year      "2017".
+
+d:m004 rdf:Type d:Movie;
+       md:moviename "Deep Water";
+       md:year      "2022".
+
+d:m005 rdf:Type d:Movie;
+       md:moviename "No Time to Die";
+       md:year      "2021".
+
+d:m006 rdf:Type d:Movie;
+       md:moviename "Knives Out";
+       md:year      "2019".
+
+d:m007 rdf:Type d:Movie;
+       md:moviename "Black Widow";
+       md:year      "2021".
+
+d:m008 rdf:Type d:Movie;
+       md:moviename "Avengers: Endgame";
+       md:year      "2019".
+
+d:m009 rdf:Type d:Movie;
+       md:moviename "Zodiac";
+       md:year      "2007".
+
+d:m010 rdf:Type d:Movie;
+       md:moviename "Prisoners";
+       md:year      "2013".
+
+d:m011 rdf:Type d:Movie;
+       md:moviename "The Adam Project";
+       md:year      "2022".
+
+d:m012 rdf:Type d:Movie;
+       md:moviename "X-Men Origins: Wolverine";
+       md:year      "2009".
+
+d:m013 rdf:Type d:Movie;
+       md:moviename "A Simple Favor";
+       md:year      "2018".
+
+d:m014 rdf:Type d:Movie;
+       md:moviename "Red Notice";
+       md:year      "2021".
+
+#Role
+
+d:role1 rdf:Type d:m001;
+    ad:charaname "Murray Franklin".
+d:role2 rdf:Type d:m001;
+    ad:charaname "Joker".
+d:role3 rdf:Type d:m002;
+    ad:charaname "Theodore".
+d:role4 rdf:Type d:m002;
+    ad:charaname "Amy".
+d:role5 rdf:Type d:m003;
+    ad:charaname "Lois Lane".
+d:role6 rdf:Type d:m003;
+    ad:charaname "Batman".
+d:role7 rdf:Type d:m004;
+    ad:charaname "Vic".
+d:role8 rdf:Type d:m004;
+    ad:charaname "Melinda".
+d:role9 rdf:Type d:m005;
+    ad:charaname "Paloma".
+d:role10 rdf:Type d:m006;
+    ad:charaname "Marta Cabrera".
+d:role11 rdf:Type d:m005;
+    ad:charaname "James Bond".
+d:role12 rdf:Type d:m006;
+    ad:charaname "Benoit Blanc".
+d:role13 rdf:Type d:m007;
+    ad:charaname "Melina".
+d:role14 rdf:Type d:m007;
+    ad:charaname "Black Widow".
+d:role15 rdf:Type d:m002;
+    ad:charaname "Samantha (voice)".
+d:role16 rdf:Type d:m008;
+    ad:charaname "Black Widow".
+d:role17 rdf:Type d:m006;
+    ad:charaname "Ransom Drysdale".
+d:role18 rdf:Type d:m008;
+    ad:charaname "Captain America".
+d:role19 rdf:Type d:m008;
+    ad:charaname "Iron Man".
+d:role20 rdf:Type d:m009;
+    ad:charaname "Paul Avery".
+d:role21 rdf:Type d:m009;
+    ad:charaname "Robert Graysmith".
+d:role22 rdf:Type d:m010;
+    ad:charaname "Detective Loki".
+d:role23 rdf:Type d:m008;
+    ad:charaname "Hulk".
+d:role24 rdf:Type d:m009;
+    ad:charaname "Inspector David Toschi".
+d:role25 rdf:Type d:m011;
+    ad:charaname "Louis Reed".
+d:role26 rdf:Type d:m010;
+    ad:charaname "Keller Dover".
+d:role27 rdf:Type d:m011;
+    ad:charaname "Big Adam".
+d:role28 rdf:Type d:m012;
+    ad:charaname "Logan".
+d:role29 rdf:Type d:m012;
+    ad:charaname "Wade Wilson".
+d:role30 rdf:Type d:m013;
+    ad:charaname "Emily Nelson".
+d:role31 rdf:Type d:m013;
+    ad:charaname "Stephanie Smothers".
+d:role32 rdf:Type d:m003;
+    ad:charaname "Wonder Woman".
+d:role33 rdf:Type d:m014;
+    ad:charaname "The Bishop".
+d:role34 rdf:Type d:m014;
+    ad:charaname "Nolan Booth".

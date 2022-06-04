@@ -1,0 +1,15 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix ad: <http://examplesparql.com/n/actordata#>
+prefix md: <http://examplesparql.com/n/moviedata#>
+prefix d: <http://examplesparql.com/n/data#>
+
+SELECT ?name ?born ?city ?movie ?charactername
+WHERE {
+  ?role rdf:Type ?roleinmovie;
+  	ad:charaname ?charactername.
+  ?roleinmovie md:moviename ?movie.
+  ?actor ad:hasrole ?role;
+         ad:name ?name;
+         ad:born ?born;
+         ad:city ?city.
+}
