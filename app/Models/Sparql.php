@@ -30,6 +30,7 @@ class Sparql extends Model
         $country = '';
         $hasrole = '';
         $moviename = '';
+        $image = '';
 
         if ($type == 'actorid') {
             $id == $search;
