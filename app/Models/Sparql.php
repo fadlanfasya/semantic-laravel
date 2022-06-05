@@ -24,20 +24,24 @@ class Sparql extends Model
         $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/actor/query');
 
         $id = '';
+        $movieid = '';
         $name = '';
         $born = '';
         $city = '';
         $country = '';
         $hasrole = '';
         $moviename = '';
+        $year = '';
         $image = '';
 
         if ($type == 'actorid') {
-            $id == $search;
-        } else if ($type == 'name') {
+            $id = $search;
+        } else if($type == 'movieid'){
+            $movieid = $search;
+        } elseif ($type == 'name') {
             $name = $search;
         } else if ($type == 'born') {
-            $name = $search;
+            $born = $search;
         } else if ($type == 'city') {
             $city = $search;
         } else if ($type == 'country') {
@@ -46,6 +50,8 @@ class Sparql extends Model
             $hasrole = $search;
         } else if ($type == 'moviename') {
             $moviename = $search;
+        } else if ($type == 'year'){
+            $year = $search;
         } else if ($type == 'image'){
             $image = $search;
         } else if ($type == 'all') {
@@ -60,29 +66,64 @@ class Sparql extends Model
             prefix md: <http://examplesparql.com/n/moviedata#>
             prefix d: <http://examplesparql.com/n/data#>
             
-            SELECT ?actorid ?name ?born ?city ?country ?movie ?charactername ?image
+            SELECT ?actorid ?name ?born ?city ?country ?movieid ?movie ?year ?poster ?trailer ?charactername ?image ?marriedto
             WHERE {
               ?role rdf:Type ?roleinmovie;
                   ad:charaname ?charactername.
-              ?roleinmovie md:moviename ?movie.
+              ?roleinmovie md:moviename ?movie;
+                           md:year ?year;
+                           md:poster ?poster;
+                           md:trailer ?trailer;
+                           md:movieid ?movieid.
               ?actor ad:hasrole ?role;
-                     ad:actorid ?actorid;
                      ad:name ?name;
                      ad:born ?born;
                      ad:city ?city;
                      ad:country ?country;
                      ad:image ?image.
-                    FILTER regex (?actorid, \"{$id}\", \"i\")
+                     OPTIONAL {?actor ad:actorid ?actorid.}
+                     OPTIONAL {?actor ad:marriedto ?marriedto.}
+                    FILTER regex (?actorid , \"{$id}\", \"i\")
                     FILTER regex (?name, \"{$name}\", \"i\")
-                    FILTER regex (?born, \"{$born}\", \"i\")
-                    FILTER regex (?city, \"{$city}\", \"i\")
+                    FILTER contains(lcase(str(?city)), lcase(str(\"".$city."\")))
                     FILTER regex (?country, \"{$country}\", \"i\")
-                    FILTER regex (?charactername, \"{$hasrole}\", \"i\")
                     FILTER regex (?movie, \"{$moviename}\", \"i\")
-                    FILTER regex (?movie, \"{$image}\", \"i\")
+                    FILTER regex (?movieid, \"{$movieid}\", \"i\")
                 }"
         );
 
+        return $result;
+    }
+
+    function getName($search = '',$type = '')
+    {
+        //$sparql = new \EasyRdf\Sparql\Client('https://62a0-125-164-16-203.ap.ngrok.io/#/dataset/actor/query');
+        $sparql = new \EasyRdf\Sparql\Client('http://localhost:3030/actor/query');
+
+        $name = '';
+
+        
+        if ($type == 'name') {
+            $name = $search;
+        } else {
+            return "Unknown type";
+        }
+
+        $result = $sparql->query(
+            "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+            prefix ad: <http://examplesparql.com/n/actordata#>
+            prefix md: <http://examplesparql.com/n/moviedata#>
+            prefix d: <http://examplesparql.com/n/data#>
+            
+            SELECT ?actorid ?name ?born ?city
+            WHERE {
+              ?actor ad:name ?name;
+                     ad:born ?born;
+                     ad:city ?city;
+                     OPTIONAL {?actor ad:actorid ?actorid.}
+                    FILTER regex (?name, \"{$name}\", \"i\")
+                }"
+        );
         return $result;
     }
 }
