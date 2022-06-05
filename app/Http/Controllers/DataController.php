@@ -11,15 +11,9 @@ class DataController extends Controller
     {
         $sparql = new Sparql();
         
-        $Id = $sparql->getActor('actorid', $search);
-        $Image = $sparql->getActor('image',$search);
-        $Name = $sparql->getActor('name', $search);
-        $Country = $sparql->getActor('country', $search);
-        $Born = $sparql->getActor('born', $search);
-        $City = $sparql->getActor('city', $search);
-        $Role = $sparql->getActor('hasrole', $search);
+        $name = $sparql->getName($search, 'name');
 
-        return compact("Id","Image","Name", "Country", "Born", "City", "Role");
+        return compact('name');
     }
 
     function getAllActor(){
@@ -28,33 +22,33 @@ class DataController extends Controller
         return $sparql->getActor('all');
     }
 
-    function getActorById($id){
+    function getActorById($Id){
         $sparql = new Sparql();
-
-        return $sparql->getActor('id',$id);
+        
+        return $sparql->getActor('actorid',$Id);
     }
 
-    function getActor($name){
+    // function getActor($name){
+    //     $sparql = new Sparql();
+
+    //     return $sparql->getActor('name', $name);
+    // }
+
+    // function getByCity($city){
+    //     $sparql = new Sparql();
+
+    //     return $sparql->getActor('country', $city);
+    // }
+
+    function getAllMovie(){
         $sparql = new Sparql();
 
-        return $sparql->getActor('name', $name);
+        return $sparql->getActor('all');
     }
 
-    function getByCity($city){
+    function getMovieById($Id){
         $sparql = new Sparql();
-
-        return $sparql->getActor('city', $city);
+        
+        return $sparql->getActor('movieid',$Id);
     }
-
-    function getByCategory($country){
-        $sparql = new Sparql();
-
-        return $sparql->getActor('country', $country);
-    }
-
-    function getBySpecMenu($hasrole){
-        $sparql = new Sparql();
-
-        return $sparql->getActor('hasrole', $hasrole);
-    }  
 }
