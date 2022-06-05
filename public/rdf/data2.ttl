@@ -165,59 +165,101 @@ d:a017 rdf:Type d:Actress;
 #Movie
 
 d:m001 rdf:Type d:Movie;
+       md:movieid "M001";
        md:moviename "Joker";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Joker_%282019_film%29_poster.jpg/220px-Joker_%282019_film%29_poster.jpg";
+       md:trailer "https://www.youtube.com/embed/zAGVQLHvwOY";
        md:year      "2019".
 
 d:m002 rdf:Type d:Movie;
+       md:movieid "M002";
        md:moviename "Her";
+       md:poster "https://upload.wikimedia.org/wikipedia/id/thumb/9/9c/Her_Joaquin_Phoenix_Poster_2013.jpg/220px-Her_Joaquin_Phoenix_Poster_2013.jpg";
+       md:trailer "https://www.youtube.com/embed/dJTU48_yghs";
        md:year      "2013".
 
 d:m003 rdf:Type d:Movie;
+       md:movieid "M003";
        md:moviename "Justice League";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/6/6b/Justice_League_%28film%29_poster.jpg";
+       md:trailer "https://www.youtube.com/embed/3cxixDgHUYw";
        md:year      "2017".
 
 d:m004 rdf:Type d:Movie;
+       md:movieid "M004";
        md:moviename "Deep Water";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Deep_Water_%282022_film%29.jpg/220px-Deep_Water_%282022_film%29.jpg";
+       md:trailer "https://www.youtube.com/embed/90JsrQwE5CA";
        md:year      "2022".
 
 d:m005 rdf:Type d:Movie;
+       md:movieid "M005";
        md:moviename "No Time to Die";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/No_Time_to_Die_poster.jpg/220px-No_Time_to_Die_poster.jpg";
+       md:trailer "https://www.youtube.com/embed/BIhNsAtPbPI";
        md:year      "2021".
 
 d:m006 rdf:Type d:Movie;
+       md:movieid "M006";
        md:moviename "Knives Out";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Knives_Out_poster.jpeg/220px-Knives_Out_poster.jpeg";
+       md:trailer "https://www.youtube.com/embed/qGqiHJTsRkQ";
        md:year      "2019".
 
 d:m007 rdf:Type d:Movie;
+       md:movieid "M007";
        md:moviename "Black Widow";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/e/e9/Black_Widow_%282021_film%29_poster.jpg/220px-Black_Widow_%282021_film%29_poster.jpg";
+       md:trailer "https://www.youtube.com/embed/ybji16u608U";
        md:year      "2021".
 
 d:m008 rdf:Type d:Movie;
+       md:movieid "M008";
        md:moviename "Avengers: Endgame";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg";
+       md:trailer "https://www.youtube.com/embed/TcMBFSGVi1c";
        md:year      "2019".
 
 d:m009 rdf:Type d:Movie;
+       md:movieid "M009";
        md:moviename "Zodiac";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Zodiac2007Poster.jpg/220px-Zodiac2007Poster.jpg";
+       md:trailer "https://www.youtube.com/embed/yNncHPl1UXg";
        md:year      "2007".
 
 d:m010 rdf:Type d:Movie;
+       md:movieid "M010";
        md:moviename "Prisoners";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/6/63/Prisoners2013Poster.jpg/220px-Prisoners2013Poster.jpg";
+       md:trailer "https://www.youtube.com/embed/bpXfcTF6iVk";
        md:year      "2013".
 
 d:m011 rdf:Type d:Movie;
+       md:movieid "M011";
        md:moviename "The Adam Project";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/d/d7/The_Adam_Project_poster.png/220px-The_Adam_Project_poster.png";
+       md:trailer "https://www.youtube.com/embed/X9ebeNKkc08";
        md:year      "2022".
 
 d:m012 rdf:Type d:Movie;
+       md:movieid "M012";
        md:moviename "X-Men Origins: Wolverine";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/0/08/X-Men_Origins_Wolverine_theatrical_poster.jpg";
+       md:trailer "https://www.youtube.com/embed/8IxT7WFL6Ec";
        md:year      "2009".
 
 d:m013 rdf:Type d:Movie;
+       md:movieid "M013";
        md:moviename "A Simple Favor";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/A_Simple_Favor.png/220px-A_Simple_Favor.png";
+       md:trailer "https://www.youtube.com/embed/rAqMlh0b2HU";
        md:year      "2018".
 
 d:m014 rdf:Type d:Movie;
+       md:movieid "M014";
        md:moviename "Red Notice";
+       md:poster "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Red_Notice_-_film_promotional_image.jpg/220px-Red_Notice_-_film_promotional_image.jpg";
+       md:trailer "https://www.youtube.com/embed/Pj0wz7zu3Ms";
        md:year      "2021".
 
 #Role
