@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ActorController;
+use App\Http\Controllers\MovieController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\DataController;
 
 /*
@@ -20,4 +22,8 @@ Route::get('/', function () {
 });
 
 Route::get('/actor',[ActorController::class,'index']);
-Route::get('/actor/{actorid}',[ActorController::class,'getActorById']);
+Route::get('/actor/{id}',[ActorController::class,'getActorById']);
+Route::get('/actor/{city}',[ActorController::class, 'cities']);
+Route::get('/movie',[MovieController::class,'index']);
+Route::get('/movie/{id}',[MovieController::class,'getMovieById']);
+Route::post('/search',[SearchController::class,'search']);
